@@ -1,0 +1,372 @@
+
+C:\Users\HP\Desktop\ruby>ruby proc.rb
+#<Cat:0x000001856a1a9190 @name="cat", @color="blue">
+meowwww
+
+
+C:\Users\HP\Desktop\ruby>ruby basics.rb
+basics.rb:125:in `getarea': undefined local variable or method `width' for #<Square:0x000001d00a52fe00 @width=10, @height=20> (NameError)
+
+        return "the area ia #{width*height}"\r
+                              ^^^^^
+Did you mean?  @width
+        from basics.rb:136:in `<main>'
+
+C:\Users\HP\Desktop\ruby>ruby basics.rb
+the area is 200
+
+C:\Users\HP\Desktop\ruby>ruby basics.rb
+the area is 200
+
+C:\Users\HP\Desktop\ruby>ruby proc.rb
+
+C:\Users\HP\Desktop\ruby>ruby proc.rb
+the area is 400
+
+C:\Users\HP\Desktop\ruby>ruby proc.rb
+
+C:\Users\HP\Desktop\ruby>ruby basics.rb
+the area is 200
+the area of square is 400
+
+C:\Users\HP\Desktop\ruby>ruby proc.rb
+the area of circle are 800
+
+C:\Users\HP\Desktop\ruby>ruby proc.rb
+proc.rb:114:in `<class:Super>': super called outside of method (NoMethodError)
+        from proc.rb:113:in `<main>'
+
+C:\Users\HP\Desktop\ruby>ruby proc.rb
+proc.rb:114:in `<class:Super>': super called outside of method (NoMethodError)
+        from proc.rb:113:in `<main>'
+
+C:\Users\HP\Desktop\ruby>ruby proc.rb
+the area of circle are 800
+
+C:\Users\HP\Desktop\ruby>ruby proc.rb
+the area is 400
+the area of circle are 800
+
+C:\Users\HP\Desktop\ruby>ruby basics.rb
+basics.rb:152:in `<main>': undefined local variable or method `obj' for main:Object (NameError)
+
+obj.Box.new(10,20)\r
+^^^
+
+C:\Users\HP\Desktop\ruby>ruby basics.rb
+basics.rb:152:in `<main>': undefined local variable or method `obj' for main:Object (NameError)
+
+obj.Box.new(10,20)\r
+^^^
+
+C:\Users\HP\Desktop\ruby>ruby basics.rb
+10
+20
+C:\Users\HP\Desktop\ruby>ruby basics.rb
+10
+20object is frozen
+basics.rb:162:in `<main>': can't modify frozen Box: #<Box:0x000001f0e1212540 @width=10, @height=20> (FrozenError)
+
+C:\Users\HP\Desktop\ruby>ruby proc.rb
+200
+100
+
+C:\Users\HP\Desktop\ruby>ruby proc.rb
+200
+100
+object is same
+
+C:\Users\HP\Desktop\ruby>ruby proc.rb
+200
+100
+object is same
+400
+200
+
+C:\Users\HP\Desktop\ruby>ruby proc.rb
+200
+100
+object is same
+proc.rb:146:in `<main>': can't modify frozen Box: #<Box:0x000001d5734b5cb8 @width=100, @height=200> (FrozenError)
+
+C:\Users\HP\Desktop\ruby>irb
+irb(main):001:0> a=10
+=> 10
+irb(main):002:0> a.class
+=> Integer
+irb(main):003:0> a.class.superclass
+=> Numeric
+irb(main):004:0> a="kartik"
+=> "kartik"
+irb(main):005:0> a.class
+=> String
+irb(main):006:0> a=[1,2,3]
+=> [1, 2, 3]
+irb(main):007:0> a.class
+=> Array
+irb(main):008:0> a={name:"kartik"}
+=> {:name=>"kartik"}
+irb(main):009:0> a.class
+=> Hash
+irb(main):010:0> a.class.superclass.superclass
+=> BasicObject
+irb(main):011:0> a
+=> {:name=>"kartik"}
+irb(main):012:0> a.class
+=> Hash
+irb(main):013:1* def hello
+irb(main):014:1*   puts"hello world..."
+irb(main):015:0> end
+=> :hello
+irb(main):016:0> hello
+hello world...
+=> nil
+irb(main):017:0> a=10
+=> 10
+irb(main):018:0> b=20
+=> 20
+irb(main):019:0> a.object_id
+=> 21
+irb(main):020:0> b.ob
+(irb):20:in `<main>': undefined method `ob' for 20:Integer (NoMethodError)
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/irb-1.4.1/exe/irb:11:in `<top (required)>'
+        from C:/Ruby31-x64/bin/irb:33:in `load'
+        from C:/Ruby31-x64/bin/irb:33:in `<main>'
+irb(main):021:0> b.object_id
+=> 41
+irb(main):022:0> str="kartik"
+=> "kartik"
+irb(main):023:0> str.object_id
+=> 173300
+irb(main):024:0> str.class
+=> String
+irb(main):025:0> a=10
+=> 10
+irb(main):026:0> a.class
+=> Integer
+irb(main):027:0> A=10
+=> 10
+irb(main):028:0> a.class
+=> Integer
+irb(main):029:0> A=20
+(irb):29: warning: already initialized constant A
+(irb):27: warning: previous definition of A was here
+=> 20
+irb(main):030:0> A.object_id
+=> 41
+irb(main):031:0> A.class
+=> Integer
+irb(main):032:0> #local variable
+=> nil
+irb(main):033:0> j=20
+=> 20
+irb(main):034:0> k=20
+=> 20
+irb(main):035:1* if a<b
+irb(main):036:1*   puts "hello"
+irb(main):037:1* else
+irb(main):038:1*   puts puts"welcome ruby"
+irb(main):039:0> end
+hello
+=> nil
+irb(main):040:1* def example_method
+irb(main):041:1*   a=10
+irb(main):042:1*   print a*10
+irb(main):043:0> end
+=> :example_method
+irb(main):044:0> example_method
+100=> nil
+irb(main):045:0> xyz=200
+=> 200
+irb(main):046:0> xyz
+=> 200
+irb(main):047:0> _xyz=300
+=> 300
+irb(main):048:0> _xyz
+=> 300
+irb(main):049:0> #class varia ble
+=> nil
+irb(main):050:0> @@xyz=300
+(irb):50:in `<main>': class variable access from toplevel (RuntimeError)
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/irb-1.4.1/exe/irb:11:in `<top (required)>'
+        from C:/Ruby31-x64/bin/irb:33:in `load'
+        from C:/Ruby31-x64/bin/irb:33:in `<main>'
+irb(main):051:1* class Kartik
+irb(main):052:1*   @@name="kartik"
+irb(main):053:0> end
+=> "kartik"
+irb(main):054:0> obj=Kartik.new
+=> #<Kartik:0x000001e96a38d330>
+irb(main):055:0> puts obj
+#<Kartik:0x000001e96a38d330>
+=> nil
+irb(main):056:1* class Student
+irb(main):057:1*   @@count=0
+irb(main):058:2*   def initialize(name,classes)
+irb(main):059:2*       @name=name
+irb(main):060:2*       @class=classes
+irb(main):061:1*   end
+irb(main):062:2*   def result
+irb(main):063:2*     return "my name is #{@name} and i am in class #{@class}"
+irb(main):064:1*   end
+irb(main):065:0> end
+=> :result
+irb(main):066:0> obj=Student("mayank",12)
+(irb):66:in `<main>': undefined method `Student' for main:Object (NoMethodError)
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/irb-1.4.1/exe/irb:11:in `<top (required)>'
+        from C:/Ruby31-x64/bin/irb:33:in `load'
+        from C:/Ruby31-x64/bin/irb:33:in `<main>'
+irb(main):067:0> obj=Student.new("mayank",12)
+=> #<Student:0x000001e96a7f9450 @class=12, @name="mayank">
+irb(main):068:0> obj.result
+=> "my name is mayank and i am in class 12"
+irb(main):069:0> obj=Box.new(100,200)
+(irb):69:in `<main>': uninitialized constant Box (NameError)
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/irb-1.4.1/exe/irb:11:in `<top (required)>'
+        from C:/Ruby31-x64/bin/irb:33:in `load'
+        from C:/Ruby31-x64/bin/irb:33:in `<main>'
+irb(main):070:1* class Student
+irb(main):071:1*   @@count=0
+irb(main):072:2*   def initialize(name,age)
+irb(main):073:2*     @name=name
+irb(main):074:2*     @age=age
+irb(main):075:1*   end
+irb(main):076:1*
+irb(main):077:2*   def total_student
+irb(main):078:2*     count+=1
+irb(main):079:2*     puts"total students are #{@@count}"
+irb(main):080:1*   end
+irb(main):081:0> end
+=> :total_student
+irb(main):082:0> obj=Student.new("harsh",21)
+=> #<Student:0x000001e96a3f62b8 @age=21, @name="harsh">
+irb(main):083:0> obj.total_student
+(irb):78:in `total_student': undefined method `+' for nil:NilClass (NoMethodError)
+        from (irb):83:in `<main>'
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/irb-1.4.1/exe/irb:11:in `<top (required)>'
+        from C:/Ruby31-x64/bin/irb:33:in `load'
+        from C:/Ruby31-x64/bin/irb:33:in `<main>'
+irb(main):084:0> total_student
+(irb):84:in `<main>': undefined local variable or method `total_student' for main:Object (NameError)
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/irb-1.4.1/exe/irb:11:in `<top (required)>'
+        from C:/Ruby31-x64/bin/irb:33:in `load'
+        from C:/Ruby31-x64/bin/irb:33:in `<main>'
+irb(main):085:1* class Student
+irb(main):086:2*   def initialize(name,age)
+irb(main):087:2*
+^C
+irb(main):085:0> irb
+irb#1(main):001:1* class Student
+irb#1(main):002:1*   @@count=1
+irb#1(main):003:2*   def intialize(name,age)
+irb#1(main):004:2*     @name=name
+irb#1(main):005:2*     @age=age
+irb#1(main):006:1*   end
+irb#1(main):007:2*   def total_student
+irb#1(main):008:2*     @@count+=1
+irb#1(main):009:2*     puts"total students are #{@@count}"
+irb#1(main):010:1*   end
+irb#1(main):011:0> end
+=> :total_student
+irb#1(main):012:0> obj=Student.new("raja",21)
+=> #<Student:0x000001e96a4a3a58 @age=21, @name="raja">
+irb#1(main):013:0> obj.total_student
+total students are 2
+=> nil
+irb#1(main):014:0> obj=Student.new("rakesh",34)
+=> #<Student:0x000001e96a6aeff0 @age=34, @name="rakesh">
+irb#1(main):015:0> ob11j=Student.new("rakesh",34)
+=> #<Student:0x000001e969e6b460 @age=34, @name="rakesh">
+irb#1(main):016:0> obj1.total_student
+(irb#1):16:in `<top (required)>': undefined local variable or method `obj1' for main:Object (NameError)
+Did you mean?  obj
+irb#1(main):017:0> ob11j.total_student
+total students are 3
+=> nil
+irb#1(main):018:0> #instance variable
+=> nil
+irb#1(main):019:0>
+irb#1(main):020:0> @z
+=> nil
+irb#1(main):021:0>
+irb#1(main):022:0> z
+(irb#1):22:in `<top (required)>': undefined local variable or method `z' for main:Object (NameError)
+irb#1(main):023:0> @z
+=> nil
+irb#1(main):024:0> @z.object_id
+=> 8
+irb#1(main):025:0> @z.class
+=> NilClass
+irb#1(main):026:0> @z.class.superclass
+=> Object
+irb#1(main):027:0> @z.class.superclass.superclass
+=> BasicObject
+irb#1(main):028:0> @z.class.superclass.superclass.superclasss
+(irb#1):28:in `<top (required)>': undefined method `superclasss' for BasicObject:Class (NoMethodError)
+Did you mean?  superclass
+irb#1(main):029:0> @z.class.superclass.superclass.superclass
+=> nil
+irb#1(main):030:0> #global variable
+=> nil
+irb#1(main):031:0> $country="india"
+=> "india"
+irb#1(main):032:0> $contry.variable
+(irb#1):32:in `<top (required)>': undefined method `variable' for nil:NilClass (NoMethodError)
+irb#1(main):033:0> $contry.class
+=> NilClass
+irb#1(main):034:0> #constant variable
+=> nil
+irb#1(main):035:0> ABC=10
+=> 10
+irb#1(main):036:0> ABC=200
+(irb#1):36: warning: already initialized constant ABC
+(irb#1):35: warning: previous definition of ABC was here
+=> 200
+irb#1(main):037:0> Student
+=> Student
+irb#1(main):038:0> #methods
+=> nil
+irb#1(main):039:1*
+^C
+irb#1(main):039:1* def example_method
+irb#1(main):040:1*   puts"hello ruby"
+irb#1(main):041:0> end
+=> :example_method
+irb#1(main):042:0> example_method
+hello ruby
+=> nil
+irb#1(main):043:0> #types of method 1.arguments 2. no arguments
+=> nil
+irb#1(main):044:1* def area(length,width)
+irb#1(main):045:1*   return length*width
+irb#1(main):046:0> end
+=> :area
+irb#1(main):047:0> area.length=10
+(irb#1):44:in `area': wrong number of arguments (given 0, expected 2) (ArgumentError)
+        from (irb#1):47:in `<top (required)>'
+irb#1(main):048:0> area(10,20)
+=> 200
+irb#1(main):049:1* def area
+irb#1(main):050:1*   length=200
+irb#1(main):051:1*   width=2
+irb#1(main):052:1*   length*width
+irb#1(main):053:0> end
+=> :area
+irb#1(main):054:0> area
+=> 400
+irb#1(main):055:0> #return statement
+=> nil
+irb#1(main):056:0> #method with dfault arguments
+=> nil
+irb#1(main):057:1* def area(length=20,width=30)
+irb#1(main):058:1*   return length*width
+irb#1(main):059:0> end
+=> :area
+irb#1(main):060:0> area
+=> 600
+irb#1(main):061:0>
+
+
+
+
+
